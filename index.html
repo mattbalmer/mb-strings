@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>String helpers | Precision JS Timer</title>
+    <style>
+        body{background:#f2f2f2;text-align:center}div{display:block;margin-bottom:10px}strong{margin:0 20px}
+    </style>
+
+    <script type="text/javascript" src="0.1.0/mb-strings.min.js"></script>
+</head>
+
+<body>
+<script>
+    function append(oldString, newString, method) {
+        var newLine = "<div> <span class='oldString'>"+oldString+"</span> <strong>&gt;</strong> <span>"+method+"</span> <strong>&gt;</strong> <span class='newString'>"+newString+"</span> </div>";
+        document.body.innerHTML = document.body.innerHTML + newLine;
+    }
+
+    var string1 = 'Hello {0}! Did you know that {1} + {1} = {2}?';
+    var string2 = 'Hello {subject}! Did you know that {a} + {a} = {b}?';
+
+    var newString1 = string1.format('World!', '2', '4');
+    var newString2 = string2.format({
+        subject: 'World',
+        a: 2,
+        b: 4
+    });
+
+    append(string1, newString1, "myString.format('World!', '2', '4')" );
+    append(string2, newString2, "myString.format({ subject: 'World', a: 2, b: 4 })");
+</script>
+
+</body>
+</html>
