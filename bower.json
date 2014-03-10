@@ -1,7 +1,7 @@
 {
     "name": "mb-strings",
     "main": "mb-strings.min.js",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "homepage": "https://github.com/mattbalmer/mb-strings",
     "authors": [
         "Matt Balmer <matt@mattbalmer.com>"

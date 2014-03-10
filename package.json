@@ -1,6 +1,6 @@
 {
     "name": "mb-strings",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Provides helper functions on the String object.",
     "author": "Matt Balmer <matt@mattbalmer.com>",
     "licenses": "MIT",
