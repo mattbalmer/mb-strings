@@ -15,10 +15,10 @@
     ],
     "license": "MIT",
     "ignore": [
-        ".gitignore",
-        "tests",
-        "jasmine-2.0.0",
-        "index.html",
-        "tests.html"
+        "**/.*",
+        "tests/",
+        "jasmine-2.0.0/",
+        "./index.html",
+        "./tests.html"
     ]
 }
