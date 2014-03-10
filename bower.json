@@ -1,0 +1,24 @@
+{
+    "name": "mb-strings",
+    "main": "mb-strings.min.js",
+    "version": "0.1.0",
+    "homepage": "https://github.com/mattbalmer/mb-strings",
+    "authors": [
+        "Matt Balmer <matt@mattbalmer.com>"
+    ],
+    "description": "Provides helper functions on the String object.",
+    "keywords": [
+        "javascript",
+        "strings",
+        "format",
+        "sprintf"
+    ],
+    "license": "MIT",
+    "ignore": [
+        ".gitignore",
+        "tests",
+        "jasmine-2.0.0",
+        "index.html",
+        "tests.html"
+    ]
+}
