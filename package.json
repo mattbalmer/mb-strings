@@ -1,10 +1,10 @@
 {
     "name": "mb-strings",
-    "version": "0.1.1",
-    "description": "Provides helper functions on the String object.",
+    "version": "0.2.0",
+    "description": "Provides helper functions related to the String object. ",
+    "main": "dist/mb-strings-sugar.min.js",
     "author": "Matt Balmer <matt@mattbalmer.com>",
     "licenses": "MIT",
-    "filename": "mb-strings.min.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/mattbalmer/mb-strings"
@@ -14,5 +14,13 @@
         "strings",
         "format",
         "sprintf"
-    ]
+    ],
+    "devDependencies": {
+        "grunt": "^0.4.5",
+        "grunt-contrib-concat": "^0.4.0",
+        "grunt-contrib-uglify": "^0.4.0",
+        "karma": "^0.12.16",
+        "karma-chrome-launcher": "^0.1.4",
+        "karma-jasmine": "^0.1.5"
+    }
 }

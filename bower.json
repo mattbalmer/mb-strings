@@ -1,12 +1,12 @@
 {
     "name": "mb-strings",
-    "main": "mb-strings.min.js",
-    "version": "0.1.1",
+    "version": "0.2.0",
+    "description": "Provides helper functions on the String object.",
+    "main": "dist/mb-strings.min.js",
     "homepage": "https://github.com/mattbalmer/mb-strings",
     "authors": [
         "Matt Balmer <matt@mattbalmer.com>"
     ],
-    "description": "Provides helper functions on the String object.",
     "keywords": [
         "javascript",
         "strings",

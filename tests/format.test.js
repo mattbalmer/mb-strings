@@ -11,7 +11,6 @@ describe('String.format', function () {
             expect(string).toBe('Hello World!');
         });
 
-
         it('should replace templated indexes with corresponding arguments in multiple uses', function () {
             string = 'Hello {0}! Did you know that {1} + {1} = {2}?';
 
