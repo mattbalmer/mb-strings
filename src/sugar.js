@@ -1,9 +1,3 @@
-/*
- * mb-strings v0.2.0 (sugar syntax)
- * Provides helper functions related to the String object. 
- * (c) 2014 Matt Balmer <matt@mattbalmer.com> http://mattbalmer.com
- * License: MIT
- */
 ;(function(mb) {
 
     /**

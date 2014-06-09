@@ -15,6 +15,7 @@ module.exports = function (config) {
 
         // list of files / patterns to load in the browser
         files: [
+            'dist/mb-strings.js',
             'dist/mb-strings-sugar.js',
             'tests/**/*.js'
         ],

@@ -1,5 +1,6 @@
-module.exports = function(grunt) {
+var dependencies = '';
 
+module.exports = function(grunt) {
     var pkg = grunt.file.readJSON('package.json')
         , banner = function(mode) {
             return "/*" +
@@ -8,24 +9,28 @@ module.exports = function(grunt) {
                 "\n * (c) <%= grunt.template.today('yyyy') %> <%= pkg.author %> http://mattbalmer.com" +
                 "\n * License: MIT" +
                 "\n */\n";
-        };
+        }
+        , intro =   ";(function(" + dependencies + ") {\n\n"
+        , outro = "\n}(" + dependencies + "));";
 
     // Project configuration.
     grunt.initConfig({
         pkg: pkg,
         concat: {
             options: {
-                banner: banner()
+                banner: banner() + intro,
+                footer: outro
             },
             safe: {
-                src: [ 'src/mb-strings.js' ],
+                src: [ 'src/core.js', 'src/export.js' ],
                 dest: 'dist/' + pkg.name + '.js'
             },
             sugar: {
                 options: {
-                    banner: banner('sugar syntax enabled')
+                    banner: banner('sugar syntax'),
+                    footer: ''
                 },
-                src: [ 'src/mb-strings.js', 'src/mb-strings-sugar.js' ],
+                src: [ 'src/sugar.js' ],
                 dest: 'dist/' + pkg.name + '-sugar.js'
             }
         },

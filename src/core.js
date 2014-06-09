@@ -1,11 +1,3 @@
-/*
- * mb-strings v0.2.0
- * Provides helper functions related to the String object. 
- * (c) 2014 Matt Balmer <matt@mattbalmer.com> http://mattbalmer.com
- * License: MIT
- */
-;(function() {
-
     /**
      * Formats a string by replacing {#} with it's numerically corresponding argument.
      * eg: <i>formatString("Hello {0}! Good to see {1}", 'World', 'you!')</i> returns <i>"Hello World! Good to see you!"</i>
@@ -30,14 +22,3 @@
                 : match;
         });
     };
-
-    // === Export ===
-    if(typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-        module.exports = formatString;
-    }
-    else {
-        window.mb = window.mb || {};
-        window.mb.formatString = formatString;
-    }
-
-}());
