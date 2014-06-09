@@ -2,7 +2,7 @@
     "name": "mb-strings",
     "version": "0.2.1",
     "description": "Provides helper functions related to the String object. ",
-    "main": "dist/mb-strings-sugar.min.js",
+    "main": "dist/mb-strings.js",
     "author": "Matt Balmer <matt@mattbalmer.com>",
     "licenses": "MIT",
     "repository": {
