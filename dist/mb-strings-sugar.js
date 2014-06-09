@@ -5,6 +5,7 @@
  * License: MIT
  */
 ;(function(mb) {
+    if(!mb) return;
 
     /**
      * Formats a string by replacing {#} with it's numerically corresponding argument.
@@ -17,4 +18,4 @@
         return mb.formatString.apply(this, args);
     };
 
-}(mb));
+}( (typeof mb !== 'undefined' ? mb : undefined) ));
